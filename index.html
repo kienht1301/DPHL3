@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Công ty TNHH Đồng Phong Hợp Lực</title>
+  <style>
+    body { margin:0; font-family:Arial, sans-serif; background:#f8f9fa; color:#333; }
+    header { background:#004d66; color:#fff; padding:20px; text-align:center; }
+    header h1 { margin:0; font-size:28px; }
+    nav { background:#006680; display:flex; justify-content:center; gap:20px; padding:10px; }
+    nav a { color:#fff; text-decoration:none; font-weight:bold; }
+    section { padding:40px 20px; max-width:1000px; margin:auto; }
+    h2 { color:#004d66; margin-bottom:20px; }
+    .services { display:grid; grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); gap:20px; }
+    .service { background:#fff; padding:20px; border-radius:12px; box-shadow:0 4px 10px rgba(0,0,0,0.1); }
+    .contact { background:#e6f2f5; padding:20px; border-radius:12px; }
+    footer { background:#004d66; color:#fff; text-align:center; padding:20px; margin-top:40px; }
+    iframe { border:0; width:100%; height:300px; border-radius:12px; }
+    .rss-feed { background:#fff; padding:20px; border-radius:12px; margin-top:20px; box-shadow:0 4px 10px rgba(0,0,0,0.1); }
+    #chat-widget { position:fixed; bottom:20px; right:20px; z-index:9999; }
+    #chat-toggle { background:#00ffe5; border:none; border-radius:50%; width:60px; height:60px; 
+      box-shadow:0 0 15px rgba(0,255,229,0.6); cursor:pointer; font-size:24px; font-weight:bold; }
+    #chatbox { display:none; flex-direction:column; width:320px; height:400px; background:#111; 
+      border-radius:15px; box-shadow:0 0 25px rgba(0,255,229,0.5); overflow:hidden; }
+    #chatbox header { background:#00ffe5; color:#000; padding:12px; font-weight:bold; text-align:center; }
+    #chat-messages { flex:1; padding:10px; overflow-y:auto; font-size:14px; line-height:1.4; }
+    #chatbox input { flex:1; border:none; padding:10px; background:#222; color:#fff; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Công ty TNHH Đồng Phong Hợp Lực</h1>
+    <p>Tổ dân phố Tân Thành, Phường Hải Bình, Tỉnh Thanh Hóa, Việt Nam</p>
+  </header>
+
+  <nav>
+    <a href="#about">Giới thiệu</a>
+    <a href="#services">Dịch vụ</a>
+    <a href="#contact">Liên hệ</a>
+    <a href="#news">Tin tức</a>
+  </nav>
+
+  <section id="about">
+    <h2>Giới thiệu</h2>
+    <p>Công ty TNHH Đồng Phong Hợp Lực (MST: <b>2802455453</b>) hoạt động trong lĩnh vực cung cấp vật tư, thiết bị, dịch vụ tư vấn, cho thuê thiết bị và cung cấp nhân lực. Chúng tôi cam kết mang đến giải pháp tối ưu, an toàn và hiệu quả cho khách hàng.</p>
+  </section>
+
+  <section id="services">
+    <h2>Dịch vụ</h2>
+    <div class="services">
+      <div class="service"><h3>📦 Cung cấp vật tư, thiết bị, hàng hóa</h3><p>Đầy đủ chủng loại, chất lượng đảm bảo, nguồn gốc rõ ràng.</p></div>
+      <div class="service"><h3>💡 Dịch vụ tư vấn</h3><p>Tư vấn kỹ thuật, môi trường, an toàn lao động và giải pháp công nghệ.</p></div>
+      <div class="service"><h3>🔧 Cho thuê thiết bị</h3><p>Cung cấp thiết bị thi công, máy móc, phương tiện với chi phí hợp lý.</p></div>
+      <div class="service"><h3>👷 Cung cấp nhân lực</h3><p>Đội ngũ nhân công tay nghề cao, đáp ứng nhanh chóng nhu cầu công việc.</p></div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Liên hệ</h2>
+    <div class="contact">
+      <p>📍 Địa chỉ: Tổ dân phố Tân Thành, Phường Hải Bình, Tỉnh Thanh Hóa, Việt Nam</p>
+      <p>📞 Điện thoại: <a href="tel:0983904169">0983.904.169</a></p>
+      <p>📧 Email: <a href="mailto:dphl.lmt@gmail.com">dphl.lmt@gmail.com</a></p>
+      <h3>Bản đồ</h3>
+      <iframe src="https://www.google.com/maps?q=Tổ+dân+phố+Tân+Thành,+Phường+Hải+Bình,+Thanh+Hóa&output=embed"></iframe>
+    </div>
+  </section>
+
+  <section id="news">
+    <h2>Tin tức môi trường</h2>
+    <div class="rss-feed">
+      <p><b>🔗 Nguồn tham khảo RSS:</b></p>
+      <ul>
+        <li><a href="https://moitruongctech.com/feed" target="_blank">Môi Trường CTech</a></li>
+        <li><a href="https://ccep.vn/feed" target="_blank">CCEP Việt Nam</a></li>
+        <li><a href="https://moitruongvadothi.vn/feed" target="_blank">Môi Trường & Đô Thị</a></li>
+        <li><a href="https://baotainguyenmoitruong.vn/rss/home.rss" target="_blank">Báo TN&MT</a></li>
+      </ul>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Công ty TNHH Đồng Phong Hợp Lực | Thiết kế hiện đại & công nghệ cao</p>
+  </footer>
+
+  <div id="chat-widget">
+    <button id="chat-toggle">💬</button>
+    <div id="chatbox">
+      <header>🤖 Trợ lý AI - DPHL</header>
+      <div id="chat-messages"></div>
+      <div style="display:flex; border-top:1px solid #333;">
+        <input id="chat-input" type="text" placeholder="Nhập tin nhắn...">
+        <button onclick="sendMessage()" style="background:#00ffe5; border:none; padding:10px 15px; cursor:pointer;">➤</button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const toggleBtn = document.getElementById("chat-toggle");
+    const chatbox = document.getElementById("chatbox");
+    toggleBtn.onclick = () => {
+      chatbox.style.display = (chatbox.style.display === "none" ? "flex" : "none");
+    };
+
+    async function sendMessage() {
+      const input = document.getElementById("chat-input");
+      const msg = input.value.trim();
+      if (!msg) return;
+
+      const messagesDiv = document.getElementById("chat-messages");
+      messagesDiv.innerHTML += `<div style="margin:8px 0; text-align:right;">
+        <span style="background:#00ffe5; color:#000; padding:8px 12px; border-radius:12px; display:inline-block;">${msg}</span>
+      </div>`;
+      input.value = "";
+      messagesDiv.scrollTop = messagesDiv.scrollHeight;
+
+      const res = await fetch("/api/chat", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ message: msg })
+      });
+      const data = await res.json();
+
+      messagesDiv.innerHTML += `<div style="margin:8px 0; text-align:left;">
+        <span style="background:#333; color:#fff; padding:8px 12px; border-radius:12px; display:inline-block;">${data.reply}</span>
+      </div>`;
+      messagesDiv.scrollTop = messagesDiv.scrollHeight;
+    }
+  </script>
+</body>
+</html>
